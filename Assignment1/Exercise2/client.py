@@ -14,7 +14,7 @@ def main():
             s.sendall(message.encode())
 
             if message.lower().strip() == "exit":
-                print("exit íconnection with server")
+                print("exit connection with server")
                 break
 
             data = s.recv(100)
