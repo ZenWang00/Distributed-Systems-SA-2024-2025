@@ -19,7 +19,7 @@ def main():
             print(f"Connected by {addr}")
             while True:
                 data = conn.recv(100)
-                message = data.decode()
+                message = data.decode().strip()
                 print(f"Message received: {message}")
 
                 if message.strip().lower() == "exit":
